@@ -1,0 +1,14 @@
+Práctica 5 – Pilas y Colas
+Respuestas
+
+1. Diferencias entre el orden de salida de la pila y la cola:
+   La pila usa LIFO: el último que entra es el primero que sale.
+   La cola usa FIFO: el primero que entra es el primero que sale.
+   En la práctica esto se notó porque en la pila salían los valores al revés
+   del orden en que los metimos, mientras que en la cola salían en el mismo orden.
+
+2. ¿Qué sucede al hacer pop en una pila vacía o dequeue en una cola vacía?
+   El programa muestra un error indicando que está vacía y no elimina nada.
+
+3. ¿Qué pasa si intento insertar más elementos que la capacidad máxima?
+   El programa detecta que está llena y marca un error.
