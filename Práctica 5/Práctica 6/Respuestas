@@ -1,0 +1,30 @@
+Práctica 6 – Cola Circular y Deque
+Respuestas
+
+(A) Cola Circular
+
+1. ¿Por qué no se desperdician posiciones?
+   Porque cuando el índice llega al final del arreglo, se regresa al inicio, eso permite reutilizar las posiciones.
+
+2. ¿Qué pasa cuando final llega al final?
+   Simplemente vuelve a 0 gracias al módulo.
+
+
+3. ¿Qué ocurre si encolo estando lleno?
+   La operación no se realiza y se muestra un error. 
+
+
+(B) Cola Doble (Deque)
+
+1. Diferencia frente a la cola circular normal:
+   El deque permite insertar y eliminar por ambos extremos.
+   La cola circular solo permite insertar por atrás y sacar por delante.
+
+2. ¿Qué operaciones permiten simular FIFO y LIFO?
+   FIFO → insert_rear + delete_front
+   LIFO → insert_front + delete_front  (o insert_rear + delete_rear)
+
+3. Aplicaciones reales del deque:
+   - Implementación del algoritmo de ventanas deslizantes
+   - Memorias caché tipo LRU
+   - Sistemas de prioridades “doble extremo”
