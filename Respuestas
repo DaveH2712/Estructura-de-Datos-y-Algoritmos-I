@@ -1,0 +1,31 @@
+Práctica 8 – Listas Doblemente Ligadas y Circulares
+Respuestas
+
+(A) Lista Doblemente Ligada
+
+1. ¿Por qué es más fácil eliminar un nodo intermedio?
+   Porque cada nodo tiene puntero al anterior y al siguiente, por lo que no hay que recorrer desde el inicio para encontrar el nodo previo.
+
+2. ¿Qué pasa si no se actualiza alguno de los punteros?
+   Se rompe la lista y puede causar errores de segmentación o recorridos incompletos.
+
+3. ¿Escenarios prácticos?
+   - Hhistorial de un navegador
+   - Listas de reproducción editables
+   - Memorias LRU
+   - Estructuras que requieren inserciones rápidas en medio
+
+
+(B) Lista Doblemente Ligada Circular
+
+1. ¿Qué diferencia hay entre una lista doblemente ligada y una circular doblemente ligada?
+   La circular no tiene NULL, asi que el primero apunta al último y viceversa.
+
+2. ¿Qué errores causan ciclos infinitos?
+   No detectar el regreso al nodo inicial.
+
+3. Aplicaciones reales:
+   - Juegos por turnos (round-robin)
+   - Buffers circulares
+   - Reproductores multimedia en modo repetición
+   - Sistemas de navegación cíclica (menús, slides)
